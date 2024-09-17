@@ -1,5 +1,6 @@
 import React from 'react'
 import bannerImage from "../../assets/banner-bg.png";
+import { Link } from 'react-router-dom';
 
 
 const Banner = () => {
@@ -22,7 +23,7 @@ const Banner = () => {
             New Table is issued for CS Department. Students click below to see time table
           </p>
         </div>
-        <a className="" href="/table">
+        <Link className="" to="/table">
           <button className="flex justify-center items-center gap-2 bg-blue-700 py-4 px-9 rounded-md hover:bg-blue-950">
             <span className="invert">
            
@@ -32,7 +33,7 @@ const Banner = () => {
               Time Table
             </p>
           </button>
-        </a>
+        </Link>
       </div>
 
      </div>
