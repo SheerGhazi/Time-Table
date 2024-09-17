@@ -1,6 +1,7 @@
 import React from 'react'
 import bannerImage from "../../assets/banner-bg.png";
 
+
 const TimeTable = () => {
   return (
     <div>
