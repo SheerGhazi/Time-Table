@@ -71,6 +71,133 @@ const TimeTable = () => {
         </div>
       </div>
     </div>
+
+
+
+    <form className='py-10  px-10' action="" autoComplete="on" method='post'>
+          <div className="form w-full h-fit  shadow-inner bg-gray-500 mt-4 p-4 rounded-xl ">
+            <h2 className="text-white font-bold text-3xl text-center px-10 mb-6 ">
+              Request A Free Quote
+            </h2>
+
+            <div className="grid grid-cols-2 gap-4">
+
+              {/* Row 1 */}
+
+              
+              <div className="flex flex-col">
+                <label
+                  htmlFor="select1"
+                  className="text-gray-700 mb-2 font-medium"
+                >
+                  What Do You Need?
+                </label>
+                <select
+                  id="select1"
+                  className="border border-gray-300   p-2 rounded-md"
+                >
+                  <option value="">Vinyl Fence</option>
+                  <option value="option1">Aluminium Fence</option>
+                  <option value="option2">Wood Fence</option>
+                  <option value="option3">Chain Link Fence</option>
+                </select>
+              </div>
+
+              <div className="flex flex-col">
+                <label
+                  htmlFor="select1"
+                  className="text-gray-700 mb-2 font-medium"
+                >
+                  How Soon?
+                </label>
+                <select
+                  id="select1"
+                  className="border border-gray-300 p-2 rounded-md"
+                >
+                  <option value="">As Soon as</option>
+                  <option value="option1">With in the next month</option>
+                  <option value="option2">In the next 3-6 months</option>
+                  <option value="option3">just getting budget idea</option>
+                </select>
+              </div>
+
+              {/* Row 2 */}
+              <div className="flex flex-col">
+                <label
+                  htmlFor="input3"
+                  className="text-gray-700 mb-2 font-medium"
+                >
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="input3"
+                  placeholder="Full Name"
+                  className="border border-gray-300 p-2 rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label
+                  htmlFor="input4"
+                  className="text-gray-700 mb-2 font-medium"
+                >
+                  Phone
+                </label>
+                <input
+                  type="text"
+                  id="input4"
+                  placeholder="Phone"
+                  className="border border-gray-300 p-2 rounded-md"
+                />
+              </div>
+
+              {/* Row 3 */}
+              <div className="flex flex-col">
+                <label
+                  htmlFor="input5"
+                  className="text-gray-700 mb-2 font-medium"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="input5"
+                  placeholder="Email"
+                  className="border border-gray-300 p-2  rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label
+                  htmlFor="input6"
+                  className="text-gray-700 mb-2 font-medium"
+                >
+                  Zip Code
+                </label>
+                <input
+                  type="text"
+                  id="input6"
+                  placeholder="Zip Code"
+                  className="border border-gray-300 p-2  rounded-md"
+                />
+              </div>
+
+
+              <label htmlFor="checkbox" className='font-bold text-white'>Are you a Human</label>
+              <input type="checkbox" id='checkbox'  />
+
+
+              <label htmlFor="radio" className='font-bold text-white'>Fill in the black</label>
+              <input type="radio" id='radio'  />
+              
+
+
+              {/* Button Row - Spans 2 columns */}
+              <button className="col-span-2 font-medium text-base bg-white hover:bg-blue-600 text-black p-2 rounded mt-4 ">
+                Submit
+              </button>
+            </div>
+          </div>
+          </form>
     </div>
   )
 }
